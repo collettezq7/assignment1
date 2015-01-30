@@ -35,10 +35,12 @@ font-size: 24px;
 img{
 max-width:100%;
 }
+button{
+	display:block;
+}
 #bio img{
 display:none;
 }
-
 form p{
 margin-top: 2em;
 margin-bottom: 0.25em;
@@ -102,6 +104,11 @@ margin:0 0 0.2em 0;
 }
 .tasks li{
 	list-style-type: circle;
+}
+.hidden {
+	display: none;
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
 }
 
 @media screen and (max-width: 768px){

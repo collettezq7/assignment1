@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<style>
+			.hidden {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>My Website</h1>
+		<div id="frogArticle">
+			This is an article about frogs.
+		</div>
+		<button>Click Me To Hide Article</button>
+		<script>
+			// Time to put it all together
+
+			// Complete the following tasks
+			
+			// 1) Use document.querySelector to get a handle on the frogArticle
+			// 2) Use document.querySelector to get a handle on the button tag
+			// 3) Create a boolean value named isVisible
+			// 4) Use addEventListener(type, function) to add a click event to our button tag.
+			// 5) Inside our eventListenerFunction, we need to do the following
+			// 6) If isVisible is true, then do the following
+			//		Add the class "hidden" to our frogArticle
+			//		Change the textContent of our button to say, "Click Me To Show Article"
+			// 		Change isVisible to false
+			// 7) If isVisible is false, then do the following
+			//		Remove the class "hidden" from our frogArticle
+			//		Change the textContent of our button to say, "Click Me To Hide Article"
+			//		Change isVisible to true
+
+
+			var frogArticle = document.querySelector("body div#frogArticle");
+			var button = document.querySelector("button");
+			var isVisible = true;
+
+			button.addEventListener("click", function (evt) {
+					console.log("clicked");
+				
+					if (isVisible) {
+						frogArticle.classList.add("hidden");
+						button.textContent = "Click Me To Show Article";
+						isVisible = false;
+					}
+					else {
+						frogArticle.classList.remove("hidden");
+						button.textContent = "Click Me To Hide Article";
+						isVisible = true;
+					}
+
+			
+
+			}
+			)
+
+
+
+
+		</script>	
+	</body>
+</html>
