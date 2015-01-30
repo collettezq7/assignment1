@@ -74,6 +74,9 @@ textarea{
 	min-width: 40%;
 	min-height: 6em;
 }
+footer{
+	margin-left:5%;
+}
 
 #nav ul{
 	padding: 0;
